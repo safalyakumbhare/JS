@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Minutes to Hours and Minutes</title>
+</head>
+<body>
+    <h1>Convert Minutes to Hours and Minutes</h1>
+
+    <!-- Create an input field and button -->
+    <label for="minutesInput">Enter minutes:</label>
+    <input type="number" id="minutesInput">
+    <button onclick="convertMinutes()">Convert</button>
+
+    <!-- Display the result -->
+    <p id="result"></p>
+
+    <script>
+        function convertMinutes() {
+            const minutesInput = parseInt(document.getElementById('minutesInput').value);
+
+            if (isNaN(minutesInput)) {
+                document.getElementById('result').textContent = "Please enter a valid number of minutes.";
+                return;
+            }
+
+            const hours = Math.floor(minutesInput / 60);
+            const remainingMinutes = minutesInput % 60;
+
+            document.getElementById('result').textContent = `${hours} hours and ${remainingMinutes} minutes.`;
+        }
+    </script>
+</body>
+</html>

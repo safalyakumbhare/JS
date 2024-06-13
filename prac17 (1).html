@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Array Elements</title>
+</head>
+<body>
+    <h1>Print Array Elements</h1>
+
+    <!-- Create an array -->
+    <script>
+        const myArray = ["rani", "diya", "vaishnavi", "shital", "shruti","vaibhavi"];
+
+        function printArray() {
+            const resultDiv = document.getElementById('result');
+            
+            resultDiv.innerHTML = "";
+
+            for (let i = 0; i < myArray.length; i++) {
+                const paragraph = document.createElement('p');
+                paragraph.textContent = myArray[i];
+                resultDiv.appendChild(paragraph);
+            }
+        }
+    </script>
+
+    <button onclick="printArray()">Print Array Elements</button>
+
+    <!-- Container to display the array elements -->
+    <div id="result"></div>
+</body>
+</html>
