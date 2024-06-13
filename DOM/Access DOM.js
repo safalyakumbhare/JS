@@ -15,5 +15,6 @@
 // let p1 = document.querySelector("p");  //this DOM can access the all types of elements like id,class or tags and return the first element only
 // console.dir(p1);
 
-let p_all = document.querySelectorAll("p"); //this DOM can return the Nodelist (all the given elements) on the web page 
-console.dir(p_all);
+// let p_all = document.querySelectorAll("p"); //this DOM can return the Nodelist (all the given elements) on the web page 
+// console.dir(p_all);
+
