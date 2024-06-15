@@ -18,3 +18,4 @@
 // let p_all = document.querySelectorAll("p"); //this DOM can return the Nodelist (all the given elements) on the web page 
 // console.dir(p_all);
 
+let div = document.getElementsByClassName("lol");
